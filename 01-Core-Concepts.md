@@ -1,46 +1,31 @@
 # Core AWS Concepts
 
-## 🌍 Global Infrastructure
+## Global Infrastructure
 
-- Region = geographical area
-- AZ (Availability Zone) = data center
-- Edge Locations = CDN (CloudFront)
-
-👉 Exam Tip:
-Always design for **Multi-AZ**, not single AZ.
+- Region = geographic area
+- AZ = data center
+- Edge = CDN
 
 ---
 
-## ⚙️ Shared Responsibility Model
+## Shared Responsibility
 
-| AWS | You |
-|-----|----|
-| Hardware | OS |
-| Network | Apps |
-| Data center | Data |
+AWS → infrastructure  
+You → OS, data, IAM  
 
 ---
 
-## 🧠 Key Principles
+## Key Principles
 
-### 1. High Availability
-- Multi-AZ
-- Load balancing
-
-### 2. Scalability
-- Auto Scaling
-- Serverless
-
-### 3. Elasticity
-- Scale up/down automatically
-
-### 4. Fault Tolerance
-- No single point of failure
+- High Availability → Multi-AZ
+- Scalability → ASG / Lambda
+- Fault tolerance → redundancy
+- Stateless → scalable
 
 ---
 
-## 🔥 Most Important Idea (Exam)
+## Golden Rule
 
-> Design systems that **fail gracefully**
+> Design for failure
 
 ---
