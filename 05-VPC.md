@@ -1,52 +1,23 @@
-# VPC (Virtual Private Cloud)
+# VPC
 
-## 🧠 What is VPC?
-Your private network in AWS.
+## Components
 
----
-
-## 🔑 Components
-
-- Subnets (Public / Private)
-- Route Tables
-- Internet Gateway
-- NAT Gateway
+- Subnets
+- Route tables
+- IGW
+- NAT
 
 ---
 
-## 🌐 Public vs Private
+## Public vs Private
 
-| Type | Access |
-|------|------|
-| Public | Internet |
-| Private | Internal |
+Public → internet  
+Private → internal  
 
 ---
 
-## 🔥 Key Patterns
+## Exam Tip
 
-### Public Subnet
-- Load Balancer
-- Bastion Host
-
-### Private Subnet
-- App servers
-- Databases
+Private instances → NAT Gateway
 
 ---
-
-## 🚪 NAT Gateway
-
-- Allows private instances → internet
-- No inbound traffic
-
----
-
-## ⚠️ Exam Traps
-
-- DB should NEVER be public
-- NAT is for outbound only
-
----
-
-## 🧪 Architecture
